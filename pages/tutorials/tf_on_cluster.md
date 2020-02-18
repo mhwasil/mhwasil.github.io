@@ -137,10 +137,11 @@ and match the cuda, nccl and cudnn described on [this page](https://www.tensorfl
   * You need to export cudnn and nccl you used to build tf inorder to load tensorflow
     ```
     export LD_LIBRARY_PATH=/home/emha/local/share/nccl_2.5.6/lib
-		export LD_LIBRARY_PATH=/home/mwasil2s/emha/share/cudnn/lib64
+    export LD_LIBRARY_PATH=/home/emha/emha/share/cudnn/lib64
     ```
-    
+
 **Compile your own tensor operators**
+
 Example bash script how to compile [tensor operators](https://github.com/charlesq34/pointnet2/tree/master/tf_ops/grouping). Create bash script like the following and compile it.
 ```
 #/bin/bash
