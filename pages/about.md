@@ -1,9 +1,10 @@
 ---
 layout: page
 title: about
-description: ToDo
+description: about
 ---
 
+Currently, I work as research associate at Hochschule Bonn-Rhein-Sieg, Germany.
 
 [curriculum vitae ![CV as pdf](icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/cv_noinfo.pdf)<br/>
 [github](https://github.com/mhwasil)<br/>
