@@ -1,0 +1,30 @@
+---
+import PageLayout from "@/layouts/BaseLayout.astro";
+import PublicationList from "@/components/PublicationList.astro";
+import { sortPublicationFn } from "@/utils";
+import type { Publication } from "@/utils";
+
+interface Props {
+  publications: Publication[];
+}
+
+import publications from "./publications.json";
+const sortedPublications = publications.sort(sortPublicationFn);
+---
+
+<PageLayout meta={{ title: "Publications" }}>
+  <div class='max-w-[50rem]'>
+    <!-- <TOC headings={} /> -->
+
+    <h1 class='mb-6 mt-5 text-2xl font-bold'>Publication List</h1>
+
+
+    <div class='flex flex-col gap-y-2 md:flex-row md:gap-x-5 md:gap-y-0'>
+      <div class='w-full flex-wrap gap-x-4 gap-y-2'>
+        <PublicationList
+          publications={sortedPublications}
+        />
+      </div>
+    </div>
+  </div>
+</PageLayout>
