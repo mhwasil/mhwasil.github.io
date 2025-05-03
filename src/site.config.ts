@@ -3,11 +3,11 @@ import type { AstroExpressiveCodeOptions } from 'astro-expressive-code'
 
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-	author: 'mhwasil',
+	author: 'Mohammad Wasil',
 	// Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
 	title: 'Mohammad Wasil',
 	// Meta property used as the default description meta property
-	description: 'Blog post and resume',
+	description: "Mohammad Wasil's website",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: 'en-GB',
 	// Meta property, found in src/components/BaseHead.astro L:42
@@ -31,6 +31,14 @@ export const menuLinks: Array<{ title: string; path: string }> = [
 	{
 		title: 'Blog',
 		path: '/blog/'
+	},
+  {
+		title: 'CV',
+		path: '/cv'
+	},
+  {
+		title: 'Puvlications',
+		path: '/publications/'
 	}
 ]
 

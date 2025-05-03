@@ -1,0 +1,138 @@
+---
+import PageLayout from '../../layouts/BaseLayout.astro'
+import Section from '../../components/Section.astro'
+import ExperienceCard from '../../components/ExperienceCard.astro'
+import EducationCard from '../../components/EducationCard.astro'
+import SkillLayout from '../../components/SkillLayout.astro'
+
+import { getAllPosts, sortMDByDate } from '@/utils'
+
+const languages = ['Python', 'C++']
+const ml = ['PyTorch', 'Tensorflow', 'scikit-learn', 'OpenCV']
+const others = ['Robot Operating Systems (ROS)', 'VIM', 'Bash']
+const devops = ['Kubernetes', 'Docker', 'Helm', 'Ansible', 'CI/CD', 'Hetzner Cloud', 'Google Cloud', 'OpenStack']
+const robotics = ['Robot Operating Systems (ROS)', 'PCL Library', 'Open3D', 'gazebo', 'MoveIt!']
+
+const MAX_POSTS = 10
+const allPosts = await getAllPosts()
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
+---
+
+<PageLayout meta={{ title: 'Home' }}>
+	<div class='flex w-full flex-col gap-y-10'>
+		<Section title='Education'>
+			<EducationCard
+				subject='PhD Student'
+				university='Ruhr University Bochum and Hochschule Bonn-Rhein-Sieg'
+				date='2023 - present'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<p>Continual learning for embodied autonomous systems</p>
+				
+			</EducationCard>
+			<EducationCard
+				subject='M.Sc. in Autonomous Systems (Robotics)'
+				university='Hochschule Bonn-Rhein-Sieg'
+				date='Sept 2016 - Aug 2019'
+				imageClass='h-12 w-auto md:-left-16'
+			/>
+			<EducationCard
+				subject='B.Sc. in Computer Science'
+				university='Universitas Trunojoyo Madura'
+				date='Aug 2010 - Aug 2014'
+			/>
+		</Section>
+
+		<Section title='Experience'>
+			<ExperienceCard
+				role='Research Associate'
+        company='Hochschule Bonn-Rhein-Sieg, University of Applied Sciences, Germany'
+				project='Garrulus project: Wiederaufforstung und Monitoring geschädigter Waldflächen durch unbemannte Luftfahrzeuge'
+				date='Jan 2024 - present'
+				altText='Garulus project'
+				imageClass='h-12 w-auto md:-left-16'
+				href="https://www.h-brs.de/de/garrulus"
+				github='https://git.inf.h-brs.de/garrulus'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Application of continual learning for disturb forest mapping</li>
+					<li>Development of Garrulus machine learning library for geospatial datasets</li>
+					<li>ROS2 perception library for online disturb forest mapping</li>
+				</ul>
+			</ExperienceCard>
+			<ExperienceCard
+				role='Research Associate'
+        company='Hochschule Bonn-Rhein-Sieg, University of Applied Sciences, Germany'
+        project='A2S Institute: Development of ML infrastructure for research and development',
+				date='May 2022 - Dec 2023'
+				altText='machine learning infrastructure'
+				imageClass='h-12 w-auto md:-left-16'
+				href='https://a2s-institute.github.io/gpu-cluster/'
+				github='https://github.com/a2s-institute/gpu-cluster'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Deploy Kubernetes cluster on premise</li>
+					<li>Implement monitoring and logging systems</li>
+					<li>Automate CI/CD pipelines</li>
+					<li>Build and maintain A2S GPU cluster</li>
+				</ul>
+			</ExperienceCard>
+			<ExperienceCard
+				role='Research Associate'
+        company='Hochschule Bonn-Rhein-Sieg, University of Applied Sciences, Germany'
+				project='e2x: e-assessment platform for teaching and learning'
+				date='Jan 2020 - Dec 2023'
+				altText='e-assessment platform for teaching and learning'
+				imageClass='h-12 w-auto md:-left-16'
+				href='https://e2x.inf.h-brs.de/'
+				github='https://github.com/DigiKlausur/'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Develop a large scale e-assessment platform based on JupyterHub and nbgrader</li>
+					<li>Develop e2xhub: a Python library for scaling Jupyter Notebook and nbgrader for multi users and graders</li>
+					<li>Deploy and maintain Kubernetes cluster for JupyterHub on Google cloud, Hetzner cloud, and in-house OpenStack</li>
+					<li>Provide platforms for conducting electronic exams on campus, at home, and hybrid</li>
+					<li>Maintain e2x software stack</li>
+				</ul>
+			</ExperienceCard>
+			<ExperienceCard
+				role='Research Associate'
+        company='Hochschule Bonn-Rhein-Sieg, University of Applied Sciences, Germany'
+				project='MigrAVE: Developing technologies to support children with Autism Spectrum Disorder (ASD)'
+				date='Oct 2020 - May 2022'
+				altText='robot assisted therapy for children with autism spectrum disorder'
+				imageClass='h-12 w-auto md:-left-16'
+				href='https://www.h-brs.de/en/migrave'
+				github='https://github.com/migrave'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Develop person's engagement estimation using machine learning</li>
+					<li>Integration of OpenPose and OpenFace on QTRobot</li>
+				</ul>
+			</ExperienceCard>
+			<ExperienceCard
+				role='Research Associate'
+        company='Hochschule Bonn-Rhein-Sieg, University of Applied Sciences, Germany'
+				project='SciRoc: European Robotics League plus Smart Cities Robot Competitions'
+				date='May 2020 - Oct 2021'
+				altText='European Robotics League plus Smart Cities Robot Competitions'
+				imageClass='h-12 w-auto md:-left-16'
+				href='https://www.h-brs.de/en/sciroc'
+				github='https://github.com/EuropeanRoboticsLeague'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Conducting robot competitions and bencmarking</li>
+					<li> Organizing SciRoc camp and Gerhard K. Kraetzschmar Symposium (<a href="https://sites.google.com/view/sciroc-camp-gkk-symposium/gkksymposium">link</a>) </li>
+
+				</ul>
+			</ExperienceCard>
+		</Section>
+
+		<Section title='Skills'>
+			<SkillLayout title='Languages' skills={languages} />
+			<SkillLayout title='ML' skills={ml} />
+			<SkillLayout title='Robotics' skills={robotics} />
+			<SkillLayout title='DevOps' skills={devops} />
+		</Section>
+	</div>
+</PageLayout>

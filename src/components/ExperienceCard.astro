@@ -14,7 +14,8 @@ const {
 	imagePath,
 	altText,
 	imageClass,
-	company = '', // Adding the "company" constant with a default empty value
+	company = '',
+	github = ''
 } = Astro.props
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
 
@@ -52,6 +53,14 @@ if (imagePath) {
 					<Button
 						title="Website"
 						href={href}
+						style="pill"
+						class="text-blue-600 dark:text-blue-400"
+					/>
+				)}
+				{github && (
+					<Button
+						title="Github"
+						href={github}
 						style="pill"
 						class="text-blue-600 dark:text-blue-400"
 					/>

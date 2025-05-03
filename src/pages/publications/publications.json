@@ -1,0 +1,61 @@
+[
+  {
+    "type": "journal",
+    "title": "Learning-based personalisation of robot behaviour for robot-assisted therapy",
+    "author": ["Michał Stolarz", "Alex Mitrevski", "Mohammad Wasil", "Paul G. Plöger"],
+    "venue": "Frontiers in Robotics and AI",
+    "volume": 11,
+    "pages": [1352152],
+    "year": 2024,
+    "paper": "https://www.frontiersin.org/articles/10.3389/frobt.2024.1352152/full"
+  },
+  {
+    "type": "conference",
+    "title": "Check for updates b-it-bots: Winners of RoboCup@ Work 2023",
+    "author": ["Gokul Chenchani", "Kevin Patel", "Ravisankar Selvaraju", "Shubham Shinde", "Vamsi Kalagaturu", "Vivek Mannava", "Deebul Nair", "Iman Awaad", "Mohammad Wasil", "Santosh Thoduka"],
+    "venue": "RoboCup 2023: Robot World Cup XXVI",
+    "year": 2023,
+    "paper": "https://doi.org/10.1007/978-3-031-55015-7_29"
+  },
+  {
+    "type": "preprint",
+    "title": "b-it-bots RoboCup@ Work Team Description Paper 2023",
+    "author": ["Kevin Patel", "Vamsi Kalagaturu", "Vivek Mannava", "Ravisankar Selvaraju", "Shubham Shinde", "Dharmin Bakaraniya", "Deebul Nair", "Mohammad Wasil", "Santosh Thoduka", "Iman Awaad"],
+    "venue": "arXiv preprint arXiv:2312.17643",
+    "year": 2023,
+    "paper": "https://arxiv.org/abs/2312.17643"
+  },
+  {
+    "type": "preprint",
+    "title": "Personalised robot behaviour modelling for robot-assisted therapy in the context of autism spectrum disorder",
+    "author": ["Michał Stolarz", "Alex Mitrevski", "Mohammad Wasil", "Paul G. Plöger"],
+    "venue": "arXiv preprint arXiv:2207.12144",
+    "year": 2022,
+    "paper": "https://arxiv.org/abs/2207.12144"
+  },
+  {
+    "type": "preprint",
+    "title": "Personalized behaviour models: a survey focusing on autism therapy applications",
+    "author": ["Michał Stolarz", "Alex Mitrevski", "Mohammad Wasil", "Paul G. Plöger"],
+    "venue": "arXiv preprint arXiv:2205.08975",
+    "year": 2022,
+    "paper": "https://arxiv.org/abs/2205.08975"
+  },
+  {
+    "type": "workshop",
+    "title": "Personalised Behaviour Model for Autism Therapy",
+    "author": ["Michał Stolarz", "Alex Mitrevski", "Mohammad Wasil", "Paul G. Plöger"],
+    "venue": "Workshop on Social AI for Human-Robot Interaction of Human-Care Robots, Fully Virtual in association with ICSR2021, Nov. 12th, 2021",
+    "year": 2021,
+    "paper": "https://socialrobot-kros.github.io/assets/resources/ICSR2021_Workshop_SHRI_Micha%C5%82Stolarz.pdf"
+  },
+  {
+    "type": "conference",
+    "title": "b-it-bots: our approach for autonomous robotics in industrial environments",
+    "author": ["Abhishek Padalkar", "Mohammad Wasil", "Shweta Mahajan", "Ramesh Kumar", "Dharmin Bakaraniya", "Raghuvir Shirodkar", "Heruka Andradi", "Deepan Padmanabhan", "Carlo Wiesse", "Ahmed Abdelrahman"],
+    "venue": "RoboCup 2019: Robot World Cup XXIII 23",
+    "pages": [591, 602],
+    "year": 2019,
+    "paper": "https://link.springer.com/chapter/10.1007/978-3-030-33766-4_47"
+  }
+]

@@ -1,7 +1,9 @@
 ---
-layout: page
-title: Install Tensorflow on cluster from source
-description: tutorials
+title: "Install TensorfFlow from Source on HPC Cluster Node"
+description: "Tutorial for installing TensorFlow from source on HPC cluster node"
+publishDate: "18 January 2020"
+tags: ["tutorial"]
+draft: false
 ---
 
 As I run into trouble by not being able to build my own tensor ops (tensor operators) which I needed to

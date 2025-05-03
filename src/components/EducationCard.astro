@@ -8,13 +8,12 @@ const {
 	as: Tag = 'div',
 	class: className,
 	href,
-	role,
-	project,
+	subject,
+	university,
 	date,
 	imagePath,
 	altText,
 	imageClass,
-	company = '', // Adding the "company" constant with a default empty value
 } = Astro.props
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
 
@@ -42,21 +41,9 @@ if (imagePath) {
 	)}
 	<div class='flex flex-col gap-y-1.5'>
 		<div class='flex flex-col gap-y-0.5'>
-			<h1 class='text-lg font-medium'>{role}</h1>
-			{company && <h2 class='text-muted-foreground'>{company}</h2>} {/* Only render if company is not empty */}
+			<h1 class='text-lg font-medium'>{subject}</h1>
+			<h2 class='text-muted-foreground'>{university}</h2>
 			<h2 class='text-muted-foreground'>{date}</h2>
-			<!-- <h2 class='text-muted-foreground'>{project}</h2> -->
-			<h2 class='text-muted-foreground'>
-				{project}
-				{href && (
-					<Button
-						title="Website"
-						href={href}
-						style="pill"
-						class="text-blue-600 dark:text-blue-400"
-					/>
-				)}
-			</h2>
 		</div>
 		<slot />
 	</div>
