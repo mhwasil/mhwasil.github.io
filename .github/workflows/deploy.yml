@@ -20,8 +20,6 @@ jobs:
         uses: withastro/action@v3
         with:
           package-manager: npm
-      - name: List directory contents
-        run: ls -la
 
   deploy:
     needs: build
