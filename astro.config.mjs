@@ -15,7 +15,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://mhwasil.github.io',
+	site: 'https://mhwasil.lembaran.my.id',
   prefetch: true,
 
   redirects: {
