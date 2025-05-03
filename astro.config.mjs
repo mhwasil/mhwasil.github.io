@@ -9,40 +9,62 @@ import expressiveCode from 'astro-expressive-code'
 import { expressiveCodeOptions } from './src/site.config'
 import icon from 'astro-icon'
 
-import vercel from '@astrojs/vercel/serverless'
-
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://mhwasil.github.io',
-	integrations: [
-		expressiveCode(expressiveCodeOptions),
-		tailwind({
-			applyBaseStyles: false
-		}),
-		sitemap(),
-		mdx(),
-		icon()
-	],
-	markdown: {
-		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
-		rehypePlugins: [
-			[
-				rehypeExternalLinks,
-				{
-					target: '_blank',
-					rel: ['nofollow, noopener, noreferrer']
-				}
-			]
-		],
-		remarkRehype: {
-			footnoteLabelProperties: {
-				className: ['']
-			}
-		}
-	},
-	prefetch: true,
-	output: 'server',
-	adapter: vercel({
-		webAnalytics: { enabled: true }
-	})
-})
+  prefetch: true,
+
+  redirects: {
+    "/about": "/",
+  },
+
+  integrations: [
+    expressiveCode(expressiveCodeOptions),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    sitemap(),
+    mdx(),
+    icon(),
+  ],
+
+  markdown: {
+    remarkPlugins: [
+      [remarkSmartypants, { dashes: "oldschool" }],
+      remarkUnwrapImages,
+      remarkReadingTime,
+      remarkMath,
+    ],
+
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          target: "_blank",
+          rel: ["nofollow, noopener, noreferrer"],
+        },
+      ],
+
+      [
+        rehypeMathjax,
+        {
+          chtml: {
+            fontURL:
+              "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2",
+            scale: 1.1,
+          },
+
+          tex: {
+            macros: mathJaxMacros,
+          },
+        },
+      ],
+    ],
+
+    remarkRehype: {
+      footnoteLabelProperties: {
+        className: [""],
+      },
+    },
+  },
+});
