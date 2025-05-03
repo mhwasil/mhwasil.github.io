@@ -8,8 +8,8 @@ interface Props {
   publications: Publication[];
 }
 
-import publications from "./publications.json";
-const sortedPublications = publications.sort(sortPublicationFn);
+import publication_list from "../../assets/publications.json";
+const sortedPublications = publication_list.sort(sortPublicationFn);
 ---
 
 <PageLayout meta={{ title: "Publications" }}>
