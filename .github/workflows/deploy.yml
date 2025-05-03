@@ -16,10 +16,25 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          package-manager: npm
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the site
+        run: npm run build
+
+      - name: List directory contents
+        run: ls -la
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist/
 
   deploy:
     needs: build
