@@ -22,10 +22,6 @@ jobs:
           package-manager: npm
       - name: List directory contents
         run: ls -la
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist/
 
   deploy:
     needs: build
