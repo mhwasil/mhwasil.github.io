@@ -1,7 +1,7 @@
 [
   {
     "type": "conference",
-    "title": "Viewpoint-Aware Sampling for Effective Online Domain Incremental Learning"
+    "title": "Viewpoint-Aware Sampling for Effective Online Domain Incremental Learning",
     "author": ["Mohammad Wasil", "Tobias Glasmachers", "Sebastian Houben"],
     "venue": "(to appear) 14th IFAC Symposium on Robotics",
     "year": 2025,
@@ -10,7 +10,7 @@
   },
   {
     "type": "workshop",
-    "title": "Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation from UAV Imagery"
+    "title": "Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation from UAV Imagery",
     "author": ["Mohammad Wasil", "Ahmad Drak", "Brennan Penfold", "Ludovico Scarton", "Maximilian Johenneken", "Alexander Asteroth", "Sebastian Houben"],
     "venue": "ICRA 2025 Workshop on the Novel Approaches for Precision Agriculture and Forestry with Autonomous Robots",
     "year": 2025,
