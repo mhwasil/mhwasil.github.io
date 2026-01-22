@@ -3,16 +3,16 @@
     "type": "conference",
     "title": "Viewpoint-Aware Sampling for Effective Online Domain Incremental Learning",
     "author": ["Mohammad Wasil", "Tobias Glasmachers", "Sebastian Houben"],
-    "venue": "(to appear) 14th IFAC Symposium on Robotics",
+    "venue": "Proceedings of the 14th IFAC Symposium on Robotics",
     "year": 2025,
-    "paper": "",
+    "paper": "https://doi.org/10.1016/j.ifacol.2025.10.202",
     "code": "https://github.com/mhwasil/viewpoint_aware_sampling"
   },
   {
     "type": "workshop",
     "title": "Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation from UAV Imagery",
     "author": ["Mohammad Wasil", "Ahmad Drak", "Brennan Penfold", "Ludovico Scarton", "Maximilian Johenneken", "Alexander Asteroth", "Sebastian Houben"],
-    "venue": "ICRA 2025 Workshop on the Novel Approaches for Precision Agriculture and Forestry with Autonomous Robots",
+    "venue": "ICRA Workshop on the Novel Approaches for Precision Agriculture and Forestry with Autonomous Robots",
     "year": 2025,
     "paper": "https://arxiv.org/abs/2505.08932",
     "code": "https://github.com/garrulus-project/sam_peft"
@@ -37,14 +37,6 @@
   },
   {
     "type": "preprint",
-    "title": "b-it-bots RoboCup@ Work Team Description Paper 2023",
-    "author": ["Kevin Patel", "Vamsi Kalagaturu", "Vivek Mannava", "Ravisankar Selvaraju", "Shubham Shinde", "Dharmin Bakaraniya", "Deebul Nair", "Mohammad Wasil", "Santosh Thoduka", "Iman Awaad"],
-    "venue": "arXiv preprint arXiv:2312.17643",
-    "year": 2023,
-    "paper": "https://arxiv.org/abs/2312.17643"
-  },
-  {
-    "type": "preprint",
     "title": "Personalised robot behaviour modelling for robot-assisted therapy in the context of autism spectrum disorder",
     "author": ["Michał Stolarz", "Alex Mitrevski", "Mohammad Wasil", "Paul G. Plöger"],
     "venue": "arXiv preprint arXiv:2207.12144",
@@ -63,7 +55,7 @@
     "type": "workshop",
     "title": "Personalised Behaviour Model for Autism Therapy",
     "author": ["Michał Stolarz", "Alex Mitrevski", "Mohammad Wasil", "Paul G. Plöger"],
-    "venue": "Workshop on Social AI for Human-Robot Interaction of Human-Care Robots, Fully Virtual in association with ICSR2021, Nov. 12th, 2021",
+    "venue": "Workshop on Social AI for Human-Robot Interaction of Human-Care Robots, Fully Virtual in association with ICSR2021, Nov. 12th",
     "year": 2021,
     "paper": "https://socialrobot-kros.github.io/assets/resources/ICSR2021_Workshop_SHRI_Micha%C5%82Stolarz.pdf"
   },
